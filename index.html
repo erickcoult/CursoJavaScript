@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
 </head>
+<style>
+    ul{
+        columns: 2;
+    }
+    html{
+        background-color: lightsteelblue;
+        margin: 10px;
+        font-size: 20px;
+    }
+    body{
+        background-color: whitesmoke;
+        max-width: 1000px;
+        padding: 10px;
+        border-radius: 6px;
+        margin: auto;
+    }
+</style>
 <script>
     //window.alert('eae parça')
     //window.confirm('salve cria')
@@ -14,12 +31,32 @@
 <body>
     <h1>Janelas</h1>
     No JavaScript podemos criar aquelas janelas de confirmação que nos permitem fazer perguntas ou mostrar um aviso. Sempre quando vamos fazer algum código no JavaScript dentro do HTML, usamos a tag "script".
-    Para fazermos as tags de <strong>janelas</strong>, utiizaremos;
+    Para fazermos as tags de <strong>janelas</strong>, utizaremos;
     <ul>
         <li>window.alert('') => para criar um alerta, aparecendo apenas"ok"</li>
         <li>window.confirm('') => para criar uma confirmação, aparencendo "ok" e "cancelar"</li>
         <li>window.prompt('') => para criar uma janela de questionário ou interação com usuário</li>
     </ul>
+    <p>Uma coisa que temos que ter o costume é de trocar o significado de = (igual) para <strong>RECEBE</strong>. Ou seja, lemos "var n1 = 4" como "var n1 recebe 4"</p>
+    <hr>
+
+    <h1>Variáveis</h1>
+    <p>Uma variável é um espaço na memória do computador destinado a um dado que é alterado durante a execução do algoritmo. Para funcionar corretamente, as variáveis precisam ser definidas por nomes e tipos</p>
+    <p>Entretanto, há uma regra para se dar um identificar para a variável, sendo elas:</p>
+    <ul>
+        <li>Podem começar com letras, $ ou _</li>
+        <li>Não podem começar com números</li>
+        <li>É possível usar letras ou números</li>
+        <li>É possível usar acentos e símbolos</li>
+        <li>Não podem conter espaços</li>
+        <li>Não podem ser palavras reservadas, ou seja, palavras que seriam códigos para o JavaScript</li>
+        <li>Inteiros: números inteiros (0, 1, 2 , 3…)</li>
+        <li>Reais: números inteiros e decimais (0; 1,2; 2,1; 3)</li>
+        <li>Caracteres: números reais, letras e outros símbolos</li>
+        <li>Lógico: comandos de VERDADEIRO ou FALSO</li>
+    </ul>
+    <p>Um exemplo para a criação de um var seria: <strong> var exemplo = 14</strong>. Assim, quando colocarmos "exemplo" no <strong>terminal</strong>, ele nos dará "14" como resposta</p>
+    <p>Caso precisemos utilizar um <strong>terminal</strong> para executar os comandos, pressionamos "ctrl + shift + ' "</p>
     
 </body>
 </html>
