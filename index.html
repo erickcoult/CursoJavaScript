@@ -7,13 +7,18 @@
     <title>JavaScript</title>
 </head>
 <style>
-    ul{
+    #e1{
         columns: 2;
+    }
+    #e2{
+        columns: 1;
+        list-style: none;
     }
     html{
         background-color: lightsteelblue;
         margin: 10px;
         font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     body{
         background-color: whitesmoke;
@@ -24,9 +29,16 @@
     }
 </style>
 <script>
+    //exercício 1
     //window.alert('eae parça')
     //window.confirm('salve cria')
     //window.prompt('eita mds')
+
+    //exercício 2
+    //var n1 = Number.parseFloat(window.prompt ('número 1'))
+    //var n2 = Number.parseFloat(window.prompt ('número 2'))
+    //var s = n1 + n2 
+    //window.alert('a soma dos valores é ' + s)
 </script>
 <body>
     <h1>Janelas</h1>
@@ -43,7 +55,7 @@
     <h1>Variáveis</h1>
     <p>Uma variável é um espaço na memória do computador destinado a um dado que é alterado durante a execução do algoritmo. Para funcionar corretamente, as variáveis precisam ser definidas por nomes e tipos</p>
     <p>Entretanto, há uma regra para se dar um identificar para a variável, sendo elas:</p>
-    <ul>
+    <ul id="e1">
         <li>Podem começar com letras, $ ou _</li>
         <li>Não podem começar com números</li>
         <li>É possível usar letras ou números</li>
@@ -57,6 +69,21 @@
     </ul>
     <p>Um exemplo para a criação de um var seria: <strong> var exemplo = 14</strong>. Assim, quando colocarmos "exemplo" no <strong>terminal</strong>, ele nos dará "14" como resposta</p>
     <p>Caso precisemos utilizar um <strong>terminal</strong> para executar os comandos, pressionamos "ctrl + shift + ' "</p>
+    <hr>
+
+    <h1>Tratamento de dados</h1>
+    <p>Tratamento de dados nada mais é do que fazer com que o JS processe as informações dadas nas prompt's (janelas de interação). Ou seja, fazer uma soma, divisão, conversão e etc.</p>
+    <p>Para isso, precisamos criar uma variável, dar a identificação e então, a pergunta. Devemos ter a quantidade de janelas para a quantidade de números que vamos somar. Ou seja, se eu irei somar 2 números, vou ter que criar 2 janelas de prompt.</p>
+    <p>Além de criar uma Variável para fazer a soma, preciamos criar uma Terceira variável que teria como a finalidade de fazer a soma das outras duas. Também precisamos criar um alerta para nos mostrar o valor.</p>
+    <p>Assim, o resultado ficaria:</p>
+    <ul id="e2">
+        <li>var n1 = Number.parseFloat(window.prompt ('número 1'))</li>
+        <li>var n2 = Number.parseFloat(window.prompt ('número 2'))</li>
+        <li>var s = n1 + n2</li>
+        <li>window.alert('a soma dos valores é ' + s)</li>
+    </ul>
+    <p>Podemos perceber que no código há uma "<strong>parseFloat</strong>". Ela tem como função de fazer que o JS apenas somará números inteiros. Há também outros dois  </p>
+    
     
 </body>
 </html>
