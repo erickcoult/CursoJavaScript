@@ -14,6 +14,9 @@
         columns: 1;
         list-style: none;
     }
+    #precedencia{
+        list-style: decimal;
+    }
     html{
         background-color: lightsteelblue;
         margin: 10px;
@@ -27,10 +30,18 @@
         border-radius: 6px;
         margin: auto;
     }
+    h2{
+        font-size: 23px;
+    }
     code{
-        word-wrap:
-         break-word;
+        word-wrap:break-word;
         white-space: pre-wrap;
+        background-color: lightblue;
+        display: block;
+        border-radius: 10px;
+    }
+    span{
+        
     }
 </style>
 
@@ -66,7 +77,7 @@
     <hr>
 
     <h1>Variáveis</h1>
-    <p>Uma variável é um espaço na memória do computador destinado a um dado que é alterado durante a execução do algoritmo. Para funcionar corretamente, as variáveis precisam ser definidas por nomes e tipos</p>
+    <p>Uma variável é um espaço na memória do computador destinado a um dadoo seu nome  que é alterado durante a execução do algoritmo. Para funcionar corretamente, as variáveis precisam ser definidas por nomes e tipos</p>
     <p>Entretanto, há uma regra para se dar um identificar para a variável, sendo elas:</p>
     <ul id="e1">
         <li>Podem começar com letras, $ ou _</li>
@@ -105,17 +116,17 @@
     <h2>Concatenação</h2>
     <p>A Concatenção tem como função de <strong>juntar</strong> string em uma frase. Ela pode ser usada quantas vezes precisar, necessitando apenas de acrescentar "+" entre cada frase. Segue o Exemplo para montar a frase "olá! tudo bem ?"</p>
     <code>
-        <span>1- var p1 = olá!</span>
-        <span>2- var p2 = tudo bem ?</span>
-        <span>3- var final = p1 + p2</span>
-        <span>4- resultado ao inserir "final"= olá!tudo bem?</span>
+        <span>var p1 = olá!</span>
+        <span>var p2 = tudo bem ?</span>
+        <span>var final = p1 + p2</span>
+        <span>resultado ao inserir "final"= olá!tudo bem?</span>
     </code>
     <p>Logo, podemos criar frases longas, bastando apenas acrescentar áspas("") e entre cada frase, adicionar o "+"</p>
     <h2>Tamplate String</h2>
     <p>O método anterior pode acabar por ser algo muito demorado caso precisemos montar uma frase grande. Para isso, usamos os <strong>tamplate string</strong>. Eles permitem fazer com que ja montemos a frase com ás variáveis dentro, bastando apenas acrescentar ${...} e é importante acrescentar a frase entre <strong>CRASE(``)</strong>. Ficando desse jeito:</p>
     <code>
-        <span>1- `o ${nome} que possui ${idade} gosta muito de comer ${fruta}`</span>
-        <span>2- Resultado: o João que possui 14 anos gosta muito de comer banana</span> 
+        <span>`o ${nome} que possui ${idade} gosta muito de comer ${fruta}`</span>
+        <span>Resultado: o João que possui 14 anos gosta muito de comer banana</span> 
     </code>
     <h2>Formatando Strings e Números</h2>
     <p>Podemos acrescentar características as Strings como por exemplo as:</p>
@@ -128,6 +139,52 @@
     <li>x.toFixed(y) => y representa a quantidade de casas que aparecerá após vírgula</li>
     <li>x.toFixed(y).replace('.', ',') => converte o ponto em vírgula.</li>
     <li>x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) => acrescenta o <strong>símbolo monetário</strong> desejado(usd, eur, brl, etc)</li>
+
+    <h1>Operadores</h1>
+    <p>Os operadores nada mais são do que a matemática pura que aprendemos na escola. Nela possuimos os sinais:</p>
+    <ul>
+        <li>+ => adição</li>
+        <li>- => subtração</li>
+        <li>* => multiplicação</li>
+        <li>/ => divisão</li>
+        <li>% => divisão inteira</li>
+        <li>** => elevado ao quadrado</li>
+    </ul>
+    <h2>Precedência</h2>
+    <p>Assim como na matemática, temos uma ordem de se "realizar" as contas. Sendo assim, temos do mais "forte" ao mais "fraco":</p>
+    <ul id="precedencia">
+        <li>()</li>
+        <li>**</li>
+        <li>*,/,% (o que estiver primeiro, da esquerda à direita)</li>
+        <li>+,-</li>
+    </ul>
+    <p>Para fixar, veja o exemplo até agora::</p>
+    <code>
+        <span>(5+3)*2/4</span>
+        <span>(8)*2/4</span>
+        <span>16/4</span>
+        <span>4</span>
+    </code>
+    <h2>Atribuição simples</h2>
+    <p>Outra coisa que é semelhante a matemática é a Atribuição simples. Ela nada mais é do que atribuir um valor à uma variável. Ou seja, uma função. Veja os exemplos:</p>
+    <code>
+        <span>var a = 2 + 2 => valor de a é 4</span>
+        <span>var b = a + 6 => valor de b é 10</span>
+        <span>var c = a + b % 3 => valor de c é 1</span>
+    </code>
+    <h2>Auto-atribuição</h2>
+    <p>a Auto-atribuição tem como objetivo de dar uma "nova" atribuição à <strong>variável</strong>. Logo, se você deu um valor à variável e, logo em seguida, dá uma nova atruibuição, aquela ultima substituirá a primeira. Veja abaixo:</p>
+    <code>
+        <span>var n = 3 => o "n" vale 3.</span>
+        <span>n = n + 4 => o "n", que antes valia 3, agora passa a valer 7.</span>
+        <span>n = n - 5 => o "n", que antes valia 7, agora passa a valer 2.</span>
+        <span>Também podemos simplificar</span>
+        <span>var n = 3</span>
+        <span>n += 4</span>
+        <span>n -= 5</span>
+    </code>
+    <p>Isso pode ser utilizado com qualquer operador que vimos acima e também podemos <strong>SIMPLIFICAR</strong></p>
+
     
 </body>
 </html>
