@@ -33,7 +33,9 @@
         white-space: pre-wrap;
     }
 </style>
-<script>
+
+<body>
+    <script>
     //exercício 1
     //window.alert('eae parça')
     //window.confirm('salve cria')
@@ -44,8 +46,14 @@
     //var n2 = Number.parseFloat(window.prompt ('número 2'))
     //var s = n1 + n2 
     //window.alert('a soma dos valores é ' + s)
+
+    //exercício 3 - formatando strings
+    //var nome = window.prompt('Seu nome')
+    //document.write(`Seu nome é ${nome}`)
+    //document.write(`Seu nome tem ${nome.length} letras`)
+    //document.write(`Seu nome em maíuscula é ${nome.toUpperCase()}`)
 </script>
-<body>
+
     <h1>Janelas</h1>
     No JavaScript podemos criar aquelas janelas de confirmação que nos permitem fazer perguntas ou mostrar um aviso. Sempre quando vamos fazer algum código no JavaScript dentro do HTML, usamos a tag "script".
     Para fazermos as tags de <strong>janelas</strong>, utizaremos;
@@ -97,12 +105,29 @@
     <h2>Concatenação</h2>
     <p>A Concatenção tem como função de <strong>juntar</strong> string em uma frase. Ela pode ser usada quantas vezes precisar, necessitando apenas de acrescentar "+" entre cada frase. Segue o Exemplo para montar a frase "olá! tudo bem ?"</p>
     <code>
-        <span>var p1 = olá!</span>
-        <span>var p2 = tudo bem ?</span>
-        <span>var final = p1 + p2</span>
-        <span>resultado ao inserir "final"= olá!tudo bem?</span>
+        <span>1- var p1 = olá!</span>
+        <span>2- var p2 = tudo bem ?</span>
+        <span>3- var final = p1 + p2</span>
+        <span>4- resultado ao inserir "final"= olá!tudo bem?</span>
     </code>
-    
+    <p>Logo, podemos criar frases longas, bastando apenas acrescentar áspas("") e entre cada frase, adicionar o "+"</p>
+    <h2>Tamplate String</h2>
+    <p>O método anterior pode acabar por ser algo muito demorado caso precisemos montar uma frase grande. Para isso, usamos os <strong>tamplate string</strong>. Eles permitem fazer com que ja montemos a frase com ás variáveis dentro, bastando apenas acrescentar ${...} e é importante acrescentar a frase entre <strong>CRASE(``)</strong>. Ficando desse jeito:</p>
+    <code>
+        <span>1- `o ${nome} que possui ${idade} gosta muito de comer ${fruta}`</span>
+        <span>2- Resultado: o João que possui 14 anos gosta muito de comer banana</span> 
+    </code>
+    <h2>Formatando Strings e Números</h2>
+    <p>Podemos acrescentar características as Strings como por exemplo as:</p>
+    <ul>
+        <li>x.lenght =>quantos caracteres a strings</li>
+        <li>x.toUpperCase() => tudo para MAIÚSCULA</li>
+        <li>x.toLowerCase() => tudo para MINÚSCULAS</li>
+    </ul>
+    <p>Agora para a formatação de números, possuimos os seguintes códigos</p>
+    <li>x.toFixed(y) => y representa a quantidade de casas que aparecerá após vírgula</li>
+    <li>x.toFixed(y).replace('.', ',') => converte o ponto em vírgula.</li>
+    <li>x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) => acrescenta o <strong>símbolo monetário</strong> desejado(usd, eur, brl, etc)</li>
     
 </body>
 </html>
