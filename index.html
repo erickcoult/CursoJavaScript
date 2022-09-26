@@ -7,10 +7,10 @@
     <title>JavaScript</title>
 </head>
 <style>
-    #e1{
+    .e1{
         columns: 2;
     }
-    #e2{
+    .e2{
         columns: 1;
         list-style: none;
     }
@@ -79,7 +79,7 @@
     <h1>Variáveis</h1>
     <p>Uma variável é um espaço na memória do computador destinado a um dadoo seu nome  que é alterado durante a execução do algoritmo. Para funcionar corretamente, as variáveis precisam ser definidas por nomes e tipos</p>
     <p>Entretanto, há uma regra para se dar um identificar para a variável, sendo elas:</p>
-    <ul id="e1">
+    <ul class="e1">
         <li>Podem começar com letras, $ ou _</li>
         <li>Não podem começar com números</li>
         <li>É possível usar letras ou números</li>
@@ -101,7 +101,7 @@
     <p>Para isso, precisamos criar uma variável, dar a identificação e então, a pergunta. Devemos ter a quantidade de janelas para a quantidade de números que vamos somar. Ou seja, se eu irei somar 2 números, vou ter que criar 2 janelas de prompt.</p>
     <p>Além de criar uma Variável para fazer a soma, preciamos criar uma Terceira variável que teria como a finalidade de fazer a soma das outras duas. Também precisamos criar um alerta para nos mostrar o valor.</p>
     <p>Assim, o resultado ficaria:</p>
-    <ul id="e2">
+    <ul class="e2">
         <li>var n1 = Number.parseFloat(window.prompt ('número 1'))</li>
         <li>var n2 = Number.parseFloat(window.prompt ('número 2'))</li>
         <li>var s = n1 + n2</li>
@@ -184,5 +184,34 @@
         <span>n -= 5</span>
     </code>
     <p>Isso pode ser utilizado com qualquer operador que vimos acima</p>
+    <h2>Relacionais</h2>
+    <p>Relacionais são operadores da grande maioria das linguagens das programções, sendo mostrado por símbolos <strong>matemáticos</strong></p>
+    <ul class="e1">
+        <li>>  ---> maior que</li>
+        <li>&#60  ---> menor que</li>
+        <li>>=  ---> maior ou igual que </li>
+        <li>&#60= ---> menor ou igual que</li>
+        <li>== --->igual à </li>
+        <li>!= ---> não igual/diferente</li>
+        <li>=== ---> igualdade restrita, tendo o mesmo valor e do mesmo tipo (typeof)</li>
+    </ul>
+    <p>Ao utilizarmos um <strong>Operador Relacional</strong>, nosso resultado será sempre um valor booleano, ou seja, verdadeiro(true) ou falso(false)</p>
+    <code>
+        <span>5 > 2 => true</span>
+        <span>8 &#60= 5 =>false</span>
+        <span>4 != 4 => false</span>
+        <span>7 == 7 => true</span>
+        <span>2 === '2' => false</span>
+        <span>"2" === "2" => true </span>
+    </code>
+    <h2>Operadores lógicos</h2>
+    <p>No JavaScript possuimos 3 <strong>Operadores lógicos</strong>, sendo eles</p>
+    <ul>
+        <li>! => Negação</li>
+        <li>&& => Conjunção</li>
+        <li>|| => Dijunção</li>
+    </ul>
+    <p>O operador de Negação é tratado como Operador UNÁRIO, ou seja,  após inserimos !, resultado será ou false ou true</p>
+    <p>Já o operador de Conjunção é considerado como BINÁRIO, assim, possuindo <strong>dois</strong>operadores lógicos( um de cada lado. Um exemplo é quando você pede uma caneta vermelha <strong>e</strong>uma azul, ou seja, você só ficará satisfeito se tiver uma caneta azul e uma vermelha</p>
 </body>
 </html>
