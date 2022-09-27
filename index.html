@@ -141,6 +141,7 @@
     <li>x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) => acrescenta o <strong>símbolo monetário</strong> desejado(usd, eur, brl, etc)</li>
 
     <h1>Operadores</h1>
+    <h2>Aritméticos</h2>
     <p>Os operadores nada mais são do que a matemática pura que aprendemos na escola. Nela possuimos os sinais:</p>
     <ul>
         <li>+ => adição</li>
@@ -151,12 +152,11 @@
         <li>** => elevado ao quadrado</li>
     </ul>
     <h2>Precedência</h2>
-    <p>Assim como na matemática, temos uma ordem de se "realizar" as contas. Sendo assim, temos do mais "forte" ao mais "fraco":</p>
+    <p>Assim como na matemática, temos uma ordem de se "realizar" as contas. Sendo assim, temos do mais "forte" ao mais "fraco" dentro de uma <strong>expressão</strong>, sendo elas:</p>
     <ul id="precedencia">
-        <li>()</li>
-        <li>**</li>
-        <li>*,/,% (o que estiver primeiro, da esquerda à direita)</li>
-        <li>+,-</li>
+        <li>Aritméticos: (),**,*,/,%,+,-</li>
+        <li>Relacionais: >, &#60, >=, &#60=, ==, !=, === </li>
+        <li>Lógicos: !, &&, ||</li>
     </ul>
     <p>Para fixar, veja o exemplo até agora::</p>
     <code>
@@ -193,7 +193,7 @@
         <li>&#60= ---> menor ou igual que</li>
         <li>== --->igual à </li>
         <li>!= ---> não igual/diferente</li>
-        <li>=== ---> igualdade restrita, tendo o mesmo valor e do mesmo tipo (typeof)</li>
+        <li>=== ---> igualdade restrita, ou seja,tendo o mesmo valor e do mesmo tipo (typeof)</li>
     </ul>
     <p>Ao utilizarmos um <strong>Operador Relacional</strong>, nosso resultado será sempre um valor booleano, ou seja, verdadeiro(true) ou falso(false)</p>
     <code>
@@ -209,9 +209,44 @@
     <ul>
         <li>! => Negação</li>
         <li>&& => Conjunção</li>
-        <li>|| => Dijunção</li>
+        <li>|| => Disjunção</li>
     </ul>
-    <p>O operador de Negação é tratado como Operador UNÁRIO, ou seja,  após inserimos !, resultado será ou false ou true</p>
-    <p>Já o operador de Conjunção é considerado como BINÁRIO, assim, possuindo <strong>dois</strong>operadores lógicos( um de cada lado. Um exemplo é quando você pede uma caneta vermelha <strong>e</strong>uma azul, ou seja, você só ficará satisfeito se tiver uma caneta azul e uma vermelha</p>
+    <p>O operador de <strong>Negação</strong> é tratado como Operador UNÁRIO, ou seja,  após inserimos !, resultado será ou false ou true</p>
+    <p>Já o operador de <strong>Conjunção</strong> é considerado como BINÁRIO, assim, possuindo <strong>dois</strong>operadores lógicos( um de cada lado). Um exemplo é quando você pede uma caneta vermelha <strong>e</strong>uma azul, ou seja, você só ficará satisfeito se tiver uma caneta azul e uma vermelha</p>
+    <p>Os operadores de <strong>Disjunção</strong> também são considerados BINÁRIO que possuem dois operadores lógicos. Seguindo o exemplo de canetas, as Disjunção busca <strong>ou</strong> vermelha <strong>ou</strong> azul. Assim, tendo uma das duas, você ficará satisfeito. Logo, basta apenas um true para o resultado ser verdadeiro</p>
+    <p>Uma coisa que devemos saber é que os operadores lógicos também possuem uma order de grandeza, sendo primeiro o NÃO (Negação), depois o E (Conjunção) e po ultimo o OU(Disjunção)</p>
+    <p><strong>IMPORTANTE: Quando se tem Operadores Relacionais, Operadores Lógicos e Operadores Aritméticos na mesma expressão, é seguido primeiro por ARITMÉTICO, RELACIONAIS E LÓGICOS.</strong></p>
+    <code>
+        <span>var a = 5</span>
+        <span>var b = 8</span>
+        <span>a > b && b % 2 == 0</span>
+        <span>a > b && 8 % 2 == 0</span>
+        <span>O lado direito é verdadeiro já que o resto de 8 % 2 é igual a 0</span>
+        <span>5 > 8 && true</span>
+        <span>false && true</span>
+        <span>Logo, o resultado final será falso já que os dois tinham que ser true</span>
+    </code>
+    <h2>Operador Ternário</h2>
+    <p>Constituído apenas por dois símbolos, sendo o <strong>?</strong> e <strong>:</strong>. Ele possui este nome por conter 3 partes sendo</p>
+    <code>
+        <span>teste ? true : false</span>
+    </code>
+    <p>Com isso, podemos fazer uma expresão que se der um determinado valor (verdadeiro ou falso) no bloco de teste, aparecerá o valor inserido no bloco true:false. Veja abaixo</p>
+    <code>
+        <span>var x = 4</span>
+        <span>var res = x / 2 == 2 ? 5:8</span>
+        <span>=>Nesta situação, caso o resultado de x/2 for 2, então o valor de res será 5(true), senão, mostrará 8(false)</span>
+        <span>var res = 4/2 == 2 ?</span>
+        <span>=>Assim, o valor de res é 5, já que a expressão do bloco teste é verdadeira</span>
+        <span>res = 5</span>
+    </code>
+    <p>Outro exemplo muito usado seria fazer o Operador Ternário como um "seletor de dados"</p>
+    <code>
+        <span>var idade = 19</span>
+        <span>var res = idade >= 18 ? 'MAIOR':'MENOR'</span>
+        <span>res = 'MAIOR'</span>
+    </code>
+    <h1>DOM</h1>
+    <p>O <strong>Document Object Model</strong>tem como função de juntar os métodos acima com o nosso site</p>
 </body>
 </html>
