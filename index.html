@@ -14,6 +14,9 @@
         columns: 1;
         list-style: none;
     }
+    .d{
+        color: red;
+    }
     #precedencia{
         list-style: decimal;
     }
@@ -40,13 +43,10 @@
         display: block;
         border-radius: 10px;
     }
-    span{
-        
-    }
 </style>
 
 <body>
-    <script>
+<script>
     //exercício 1
     //window.alert('eae parça')
     //window.confirm('salve cria')
@@ -75,6 +75,7 @@
     </ul>
     <p>Uma coisa que temos que ter o costume é de trocar o significado de = (igual) para <strong>RECEBE</strong>. Ou seja, lemos "var n1 = 4" como "var n1 recebe 4"</p>
     <hr>
+    <p id="jota">Olá!</p>
 
     <h1>Variáveis</h1>
     <p>Uma variável é um espaço na memória do computador destinado a um dadoo seu nome  que é alterado durante a execução do algoritmo. Para funcionar corretamente, as variáveis precisam ser definidas por nomes e tipos</p>
@@ -119,7 +120,7 @@
         <span>var p1 = olá!</span>
         <span>var p2 = tudo bem ?</span>
         <span>var final = p1 + p2</span>
-        <span>resultado ao inserir "final"= olá!tudo bem?</span>
+        <span>final = olá!tudo bem?</span>
     </code>
     <p>Logo, podemos criar frases longas, bastando apenas acrescentar áspas("") e entre cada frase, adicionar o "+"</p>
     <h2>Tamplate String</h2>
@@ -178,7 +179,7 @@
         <span>var n = 3 => o "n" vale 3.</span>
         <span>n = n + 4 => o "n", que antes valia 3, agora passa a valer 7.</span>
         <span>n = n - 5 => o "n", que antes valia 7, agora passa a valer 2.</span>
-        <span>Também podemos simplificar</span>
+        <span class="d">Também podemos simplificar</span>
         <span>var n = 3</span>
         <span>n += 4</span>
         <span>n -= 5</span>
@@ -221,10 +222,10 @@
         <span>var b = 8</span>
         <span>a > b && b % 2 == 0</span>
         <span>a > b && 8 % 2 == 0</span>
-        <span>O lado direito é verdadeiro já que o resto de 8 % 2 é igual a 0</span>
+        <span class="d">O lado direito é verdadeiro já que o resto de 8 % 2 é igual a 0</span>
         <span>5 > 8 && true</span>
         <span>false && true</span>
-        <span>Logo, o resultado final será falso já que os dois tinham que ser true</span>
+        <span class="d">Logo, o resultado final será falso já que os dois tinham que ser true</span>
     </code>
     <h2>Operador Ternário</h2>
     <p>Constituído apenas por dois símbolos, sendo o <strong>?</strong> e <strong>:</strong>. Ele possui este nome por conter 3 partes sendo</p>
@@ -235,9 +236,9 @@
     <code>
         <span>var x = 4</span>
         <span>var res = x / 2 == 2 ? 5:8</span>
-        <span>=>Nesta situação, caso o resultado de x/2 for 2, então o valor de res será 5(true), senão, mostrará 8(false)</span>
+        <span class="d">Nesta situação, caso o resultado de x/2 for 2, então o valor de res será 5(true), senão, mostrará 8(false)</span>
         <span>var res = 4/2 == 2 ?</span>
-        <span>=>Assim, o valor de res é 5, já que a expressão do bloco teste é verdadeira</span>
+        <span class="d">Assim, o valor de res é 5, já que a expressão do bloco teste é verdadeira</span>
         <span>res = 5</span>
     </code>
     <p>Outro exemplo muito usado seria fazer o Operador Ternário como um "seletor de dados"</p>
@@ -247,6 +248,38 @@
         <span>res = 'MAIOR'</span>
     </code>
     <h1>DOM</h1>
-    <p>O <strong>Document Object Model</strong>tem como função de juntar os métodos acima com o nosso site</p>
+    <p>O <strong>Document Object Model</strong> tem como função de juntar os métodos acima com o nosso site. Ou seja, é um conjunto de objetos dentro do seu navegador que dará acesso aos componentes internos do seu website.</p>
+    <h2>Árvore DOM</h2>
+    <p>Tudo dentro do JS está dentro de um objeto <strong>window</strong>. Dentro dele, possuimos vários objetos, como por exemplo, Location, documento (Onde há todo o HTML), history e etc. Assim, por meio da tag window, podemos acessar diversar informações no site e também expor, como "<strong>windwos.document.write(window.document.URL)" assim, dissemos ao JS para fazer um write mostrando a URL do site.</strong></p>
+    <h2>Selecionando</h2>
+    <p>Podemos selecionar para navegar dentro da <strong>Árvore DOM</strong>, havendo diversos métodos para isso, como:</p>
+    <ul>
+        <li>por Marca</li>
+        <li>por ID</li>
+        <li>por Nome</li>
+        <li>por Class</li>
+        <li>por Seletor</li>
+    </ul>
+    <h2>Marca</h2>
+    <p>Ela é representada pelo código <strong>getElementsByTagName()</strong>. Sua função é de selecionar mais de um objeto. Com isso, é possível fazermos alterações nas tag selecionadas, podendo mudar a cor, tamanho, fonte e etc. Dentro dos parenteses inserimos a tag que desejamos fazer alguma mudança. Já dentro dos colchetes selecionamos o "número" dela, ou seja, se o 'p' que desejamo mudar for o 6º do documento, então iremos inserir 12, pois a contagem começa a partir de 0.</p>
+    <code>
+        <span>var t1 = document.getElementsByTagName('p')[1]</span>
+        <span class="d">Para realizar alguma mudança basta inseir a var e a mudança</span>
+        <span>t1.style.color = 'blue'</span>
+        <span class="d">Assim como podemos escrever algo dentro de uma tag</span>
+        <span>document.write(t1.innerText)</span>
+        <span class="d">Isso também pode ser usado junto com a concatenação</span>
+        <span>document.write('Este é um exemplo' + t1.innerText)</span>
+    </code>
+    <p>As demais formas são a mesma ideia, porém as que possuem plural como "elemenTS", será acompanhada de colchetes após os parenteses.</p>
+    <h2>Seletor</h2>
+    <p>Este é o mais novo método do EcmaScrypt, ou seja, pode ser que alguns navegadores que não estejam atualizados com o mais recente do EcmaScryptcaso não suporte este método</p>
+    <p>O Selector é representado pelas tags <strong>querySelector()</strong> e <strong>querySelectorAll()</strong></p>
+    <code>
+        <span>var x = window.document.querySelector('div#xxx')</span>
+        <span class="d">Inserimos o lugar onde se encontra aquela class(.) ou id(#) e o nome que foi dado</span>
+        <span>x.style.background = 'blue'</span>
+    </code>
+    <h1>Eventos DOM</h1>
 </body>
 </html>
