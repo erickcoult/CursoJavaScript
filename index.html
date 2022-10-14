@@ -72,6 +72,12 @@
     //document.write(`Seu nome é ${nome}`)
     //document.write(`Seu nome tem ${nome.length} letras`)
     //document.write(`Seu nome em maíuscula é ${nome.toUpperCase()}`)
+
+    //exercício 4 - elementos DOM funções
+    function clicar(){
+        var a = window.document.getElementById('blocot')
+        a.innerText = 'clicou!'
+    }
 </script>
 
     <h1>Janelas</h1>
@@ -302,7 +308,28 @@
     <p>Estes são apenas <strong>alguns</strong> dos diversos eventos possíveis no JS. Para vermos todos os eventos podemos acessar o site <strong>Event Reference do Mozilla</strong>( <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">clique aqui</a>)</p>
     <h2>Funções</h2>
     <p>Para dispararmos eventos, precisamos das funções. As funções são um conjunto de códigos que serão executadas quando um evento ocorrer. Ela é formada pelo código <strong>function xxx(parametro){}</strong>, onde no lugar de "xxx" inserimos o nome da ação que iremos fazer. Já dentro das chaves inserimos os <strong>códigos/eventos</strong></p>
-    <div id="blocot"> bloco teste</div>
+    <p>Há duas formas de dispararmos as functions, sendo pelo <strong>HTML</strong> e pelo <strong>JavaScript</strong>. Para disparar no HTML, precisamos antes de inserir <strong>on</strong> e o nome do método do lado da div/id/class e etc. Após isso, colocamos um nome dentro das áspas/p>
+    <p>Agora para que o código seja disparado, inserimos a function com o nome dado anteriormente. Assim, já podemos inserir os os comandos dentro do bloco </p>
+    <p>Dentro de function, iremos criar uma var para buscar o nosso ID do exemplo anteriror. Para isso, usamos o basico de <strong>getElementsById</strong>. Como desejamos <strong>MUDAR O TEXTO</strong>, vamos utilizar a InnerText e o texto</p>
+    <p>Logo, ao clicarmos em nossa div(onclick), iremos criar um objeto (var) que fará a conexeão do JavaScript com o ID</p>
+    <code>
+        <span>div id="area" onclick="clicar()"</span>
+        <span>  var a = window.document.getElementById('area')</span>
+        <span></span>
+        <span>function cliclar() {</span>
+        <span>  a.InnerText = 'clicou!'}</span>
+    </code>
+    <div id="blocot" onclick="clicar()"> 
+        bloco teste
+    </div>
+    <p>Com o método do JavaScript, usamos o <strong>.addEventListener()</strong>e inserimos a ação que desejamos fazer. Por último, inserimos o nome que demos ao elemnto. Com isso, nao precisamos fazer o método de adicionar "onclick" nas div, deixando assim o código mais limpo.</p>
+    <code>
+        <span>a.addEventListener('click', clicar)</span>
+        <span>  var a = window.document.getElementById('area')</span>
+        <span></span>
+        <span>function cliclar() {</span>
+        <span>  a.InnerText = 'clicou!'}</span>
+    </code>
 
 </body>
 </html>
