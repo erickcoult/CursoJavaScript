@@ -308,6 +308,7 @@
     <p>Estes são apenas <strong>alguns</strong> dos diversos eventos possíveis no JS. Para vermos todos os eventos podemos acessar o site <strong>Event Reference do Mozilla</strong>( <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">clique aqui</a>)</p>
     <h2>Funções</h2>
     <p>Para dispararmos eventos, precisamos das funções. As funções são um conjunto de códigos que serão executadas quando um evento ocorrer. Ela é formada pelo código <strong>function xxx(parametro){}</strong>, onde no lugar de "xxx" inserimos o nome da ação que iremos fazer. Já dentro das chaves inserimos os <strong>códigos/eventos</strong></p>
+<<<<<<< Updated upstream
     <p>Há duas formas de dispararmos as functions, sendo pelo <strong>HTML</strong> e pelo <strong>JavaScript</strong>. Para disparar no HTML, precisamos antes de inserir <strong>on</strong> e o nome do método do lado da div/id/class e etc. Após isso, colocamos um nome dentro das áspas/p>
     <p>Agora para que o código seja disparado, inserimos a function com o nome dado anteriormente. Assim, já podemos inserir os os comandos dentro do bloco </p>
     <p>Dentro de function, iremos criar uma var para buscar o nosso ID do exemplo anteriror. Para isso, usamos o basico de <strong>getElementsById</strong>. Como desejamos <strong>MUDAR O TEXTO</strong>, vamos utilizar a InnerText e o texto</p>
@@ -330,28 +331,13 @@
         <span>function cliclar() {</span>
         <span>  a.InnerText = 'clicou!'}</span>
     </code>
+=======
+    <div id="blocot"> bloco teste</div>
     <h2>Interações com usuários</h2>
     <p>As interações geralmente são dadas pelas tags <strong>input</strong>. Um bom exemplo seria a soma de números</p>
-    <p>O primeiro passo é, dentro do HTML, criar 2 input number e 1 button. Os dois input number seria para o valor 1 e o valor 2 que serão somados. Já o input de button seria o botão de "somar". Para agilizar, utilizaremos a forma de <strong>disparar função</strong> pelo html, ou seja, "onclick". Por último, criamos uma div com um id para que possamos usar como o resultado.</p>
-    <p>Agora, em JavaScript, vamos programar a função de cada coisa. Para isso, vamos criar uma <strong>function</strong> para que possamos programar. Dentro dela, vamos criar duas var para nossos dois input de valor 1 e 2. Também iremos criar uma Var para o nosso resultado.</p>
-    <p>Por ultimo, criamos o sistema básico para soma de números, no qual iremos criar Var para os numeros e para o resultado da soma deles.</p>
-    <p>Podemos também criar uma estrutra para que possamos mostrar a mensagem do resultado no final</p>
-    <code>
-        <span class="d">Parte HTML</span>
-        <span>input type="number" name="texto1" id="texto1"</span>
-        <span>input type="number" name="texto2" id="texto2"</span>
-        <span>input type="button" value="Somar" onclick="somar()"</span>
-        <span>div id="res">Resultado div</span>
-        <span class="d"> Parte JavaScript</span>
-            <span>function somar() {</span>
-                <span>var t1 = document.getElementById('texto1')</span>
-                <span>var t2 = document.getElementById('texto2')</span>
-                <span>var res = document.getElementById('res')</span>
-                <span>var n1 = Number(t1.value)</span>
-                <span>var n2 = Number(t2.value)</span>
-                <span>var s = n1 + n2</span>
-                <span>res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`</span>
-            }
-    </code>
+    <p>O primeiro passo é, dentro do HTML, criar 2 input number e 1 button. Os dois input number seria para o valor 1 e o valor 2 que serão somados. Já o input de button seria o botão de "somar". Para agilizar, utilizaremos</p>
+    <p>Para fazermos ela precisaremos primeiro criar uma <strong>function</strong>. Dentro dela, iremos criar </p>
+>>>>>>> Stashed changes
+
 </body>
 </html>
