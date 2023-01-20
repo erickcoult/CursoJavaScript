@@ -125,9 +125,9 @@
     </ul>
     <p>Podemos perceber que no código há uma "<strong>parseFloat</strong>". Ela tem como função de fazer que o JS apenas somará números quebrados. Há também outros dois, sendo eles " <strong>parseInt</strong>" e o próprio "<strong>Number</strong>". Assim, temos: </p>
     <ul>
-        <li>parseFloat: trabalhará apenas com valores quebrados, que possuam vírgula. </li>
-        <li>parseInt: trabalhará apenas com valores inteiros.</li>
-        <li>Number: O próprio JS decidirá qual irá utilizar.</li>
+        <li><strong>parseFloat</strong>: trabalhará apenas com valores quebrados, que possuam vírgula. </li>
+        <li><strong>parseInt</strong>: trabalhará apenas com valores inteiros.</li>
+        <li><strong>Number</strong>: O próprio JS decidirá qual irá utilizar.</li>
     </ul>
     <h2>Concatenação</h2>
     <p>A Concatenção tem como função de <strong>juntar</strong> string em uma frase. Ela pode ser usada quantas vezes precisar, necessitando apenas de acrescentar "+" entre cada frase. Segue o Exemplo para montar a frase "olá! tudo bem ?"</p>
@@ -145,13 +145,16 @@
         <span>Resultado: o João que possui 14 anos gosta muito de comer banana</span> 
     </code>
     <h2>Formatando Strings e Números</h2>
+    <strong>
+            <p>*O x nestes exemplos representa uma váriável. "var x = ..."*</p>
+        </strong>
     <p>Podemos acrescentar características as Strings como por exemplo as:</p>
     <ul>
-        <li>x.lenght =>quantos caracteres a strings</li>
+        <li>x.lenght =>quantos caracteres a strings tem</li>
         <li>x.toUpperCase() => tudo para MAIÚSCULA</li>
-        <li>x.toLowerCase() => tudo para MINÚSCULAS</li>
+        <li>x.toLowerCase() => tudo para MINÚSCULAS</li> 
     </ul>
-    <p>Agora para a formatação de números, possuimos os seguintes códigos</p>
+    <p>Agora para a <strong>formatação de números</strong>, possuimos os seguintes códigos</p>
     <li>x.toFixed(y) => y representa a quantidade de casas que aparecerá após vírgula</li>
     <li>x.toFixed(y).replace('.', ',') => converte o ponto em vírgula.</li>
     <li>x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) => acrescenta o <strong>símbolo monetário</strong> desejado(usd, eur, brl, etc)</li>
@@ -203,13 +206,13 @@
     <h2>Relacionais</h2>
     <p>Relacionais são operadores da grande maioria das linguagens das programções, sendo mostrado por símbolos <strong>matemáticos</strong></p>
     <ul class="e1">
-        <li>>  ---> maior que</li>
-        <li>&#60  ---> menor que</li>
-        <li>>=  ---> maior ou igual que </li>
-        <li>&#60= ---> menor ou igual que</li>
-        <li>== --->igual à </li>
-        <li>!= ---> não igual/diferente</li>
-        <li>=== ---> igualdade restrita, ou seja,tendo o mesmo valor e do mesmo tipo (typeof)</li>
+        <li>> |maior que</li>
+        <li>&#60  | menor que</li>
+        <li>>=  |maior ou igual que </li>
+        <li>&#60= |menor ou igual que</li>
+        <li>== |igual à </li>
+        <li>!= |não igual/diferente</li>
+        <li>=== |igualdade restrita, ou seja,tendo o mesmo valor e do mesmo tipo (typeof)</li>
     </ul>
     <p>Ao utilizarmos um <strong>Operador Relacional</strong>, nosso resultado será sempre um valor booleano, ou seja, verdadeiro(true) ou falso(false)</p>
     <code>
