@@ -15,7 +15,7 @@
     //document.write(`Seu nome tem ${nome.length} letras`)
     //document.write(`Seu nome em maíuscula é ${nome.toUpperCase()}`)
 
-//exercício 4 - elementos DOM funções
+//exercício 4 - Funções
 function clicar(){
     var a = window.document.getElementById('blocot')
      a.innerText = 'clicou!'
@@ -26,12 +26,24 @@ function clicar2(){
      a.innerText = 'clicou!'
 }
 
+//exercício 5- Interações com usuários
+function somar(){
+    var tn1 = document.getElementById('txtn1')
+    var tn2 = document.querySelector('input#txtn2')
+    var res = document.getElementById('res')
+
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value)
+    var s = n1 + n2
+    res.innerHTML= `a soma final é ${s}`
+}
 
 
-// var vel = 60.1 
-// if (vel > 60) {
-//     console.log('Você foi multado!')
-// }
-// else{
-//     console.log('Não foi multado!')
-// }
+//exercício 6- Condições
+var vel = 59 
+if (vel > 60) {
+    console.log('Você foi multado!')
+}
+else{
+    console.log('Não foi multado!')
+}

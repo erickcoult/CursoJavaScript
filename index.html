@@ -242,6 +242,7 @@
     </ul>
     <p>Estes são apenas <strong>alguns</strong> dos diversos eventos possíveis no JS. Para vermos todos os eventos podemos acessar o site <strong>Event Reference do Mozilla</strong>( <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">clique aqui</a>)</p>
     <h2>Funções</h2>
+    <h3>Exercício 4 JavaScript</h3>
     <p>Para dispararmos eventos, precisamos das funções. As funções são um conjunto de códigos que serão executadas quando um evento ocorrer. Ela é formada pelo código <strong>function xxx(parametro){}</strong>, onde no lugar de "xxx" inserimos um nome aleatório, igual em um ID. Já dentro dos colchetes, inserimos os <strong>códigos/eventos.</strong></p>
     <p>Há duas formas de dispararmos as functions. Para dispararmos da primeira forma, precisamos, antes, inserir <strong>on</strong> e o nome do método do lado da div/id/class. Após isso, colocamos um nome dentro das áspas </p>
     <p>Agora para que o código seja disparado, inserimos a function com o nome dado anteriormente. Assim, já podemos inserir os os comandos dentro do bloco </p>
@@ -268,9 +269,66 @@
     </code>
     <div class="blocotest" id="area" onclick="clicar2()"> bloco teste</div>
     <h2>Interações com usuários </h2>
+    <h3>Exercício 5 JavaScript</h3>
     <p>As interações geralmente são dadas pelas tags <strong>input</strong>. Um bom exemplo seria a soma de números</p>
-    <p>O primeiro passo é, dentro do HTML, criar 2 input number e 1 button. Os dois input number seria para o valor 1 e o valor 2 que serão somados. Já o input de button seria o botão de "somar". Para agilizar, utilizaremos</p>
-    <p>Para fazermos ela, precisaremos primeiro criar uma <strong>function</strong>. Dentro dela, iremos criar </p>
+    <p>Para fazermos isso, vamos criar 3 inputs, sendo 2 number e 1 button. O button receberá um evento de click. Por fim, uma div que mostrará o resultado. <strong></strong></p>
+    <code>
+        <span>input type= "number" name= "txtn1" id= "txtn1"</span>
+        <span>input type= "number" name= "txtn2" id= "txtn2"</span>
+        <span>input type= "button" value="somar" onclick="somar()"</span>
+        <span>div id="res"> Resultado div></span>
+    </code>
+    <p>Agora, iremos para o JavaScript, onde faremos os eventos ocorrem. Primeiro de tudo, devemos "puxar" os id/class para o JavaScript. Depois fazemos uma conversão de txt para Number, inseriondo a <strong>value</strong> para que o JS transforme em valor o que for digitado na caixa de tn1</p>
+    <code>
+        <span>function somar()</span>
+        <span>var tn1 = document.getElementById('txtn1')</span>
+        <span>var tn2 = document.getElementById('txtn2')</span>
+        <span>var res = document.getElementById('res')</span>
+        <span class="d">aqui fazemos a conversão de txt para Number</span>
+        <span>var n1 = Number(tn1.value)</span>
+        <span>var n2 = Number(tn2.value)</span>
+        <span>var s = n1 + n2</span>
+    </code>
+    <p>Por último, criamos uma variável que conterá os resultados e a resposta final.</p>
+    <code>
+        <span>var s = n1 + n2</span>
+        <span>res.innerHTML= `a soma final é ${s}`</span>
+    </code>
+    <p>Ficará deste jeito</p>
+    <div id="res">Resultado</div>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <!-- value é o lugar onde inserimos o nome que será o botão -->
 
+
+    <h1>Condições</h1>
+    <h3>Exercício 6 JavaScript</h3>
+    <p>Condição a estrutura de condição a ser verificada para decidir se as linhas do bloco de código serão executadas ou não. Ou seja, a condição nada mais é do que dois caminhos (true e false) onde cada um leva para uma consquência.</p>
+    <p>Há dois tipos principais de condições, sendo a <strong>condição simples</strong> e a <strong>condição e composta</strong></p>
+    <ul>
+        <li><strong>Condição Simples</strong>: Há apenas um bloco, apenas um caminho (true)</li>
+        <li><strong>Condição Composta</strong>: Há mais de um bloco, mais de um caminho (true e false)</li>
+    </ul>
+    <p>Ou seja, caso a condição seja <strong>FALSA</strong> na condição simples, nada acontecerá. Já na outra, caso seja falsa, haverá uma coisa a se fazer.</p>
+    <code>
+        <span>var país = 'EUA'</span>
+        <span>console.log(`Vivendo em ${país}`</span>
+        <span>if (país == 'Brasil'){</span>
+            <span>console.log('Você é Brasileiro)}</span>
+        <span>else{</span>
+            <span>console.log('Você é Estrangeiro)</span>
+    </code>
+    <p>Logo, caso o país seja EUA, então o console printará na tela "Você é estrangeiro". Isso acontece pois selecionamos que SE o país for igual a Brasil, então a condição será <strong>VERDADEIRA</strong>. Logo, no exemplo acima, vemos que a condição é <strong>FALSA</strong></p>
+    <h2>Sistema de multas por Condição</h2>
+    <h3>Exercício 7 JavaScript</h3>
+    <p>Usando as condições Compostas, faremos um sistema de multa. O sistema será parecido com o exercício de SOMA.</p>
+    <p>Então, primeiro, criamos os input com os ID e a função <strong>Onclick</strong></p>
+    <code>
+        <span>Velocidade do carro: input type="number" name="txtvel" id="txtvel"</span>
+        <span>input type="button" value="Verificar" onclick="calcular()"</span>
+        <span>div id='res' resultado</span>
+    </code>
+    <p>Agora 'vamos puxar' os id para o JavaScript</p>
 </body>
 </html>
