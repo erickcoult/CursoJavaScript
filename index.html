@@ -329,6 +329,21 @@
         <span>input type="button" value="Verificar" onclick="calcular()"</span>
         <span>div id='res' resultado</span>
     </code>
-    <p>Agora 'vamos puxar' os id para o JavaScript</p>
+    <p>Agora vamos 'puxar' os id para o JavaScript e finalizar lá</p>
+    <code>
+        <span>function calcular(){</span>
+            <span>var txtv = document.querySelector('input#txtvel')</span>
+            <span>var res = document.querySelector('div#res')</span>
+            <span>var vel = Number(txt.value)</span>
+            <span>res.innerHTML += `sua velocidade é ${vel}`</span>
+            <span>if (vel >60){</span>
+            <span>res.innerHTML = `Você está multado`</span>
+            <span>}</span>
+            <span class="d">Aqui não pode ser apenas recebe(=). Tem que ser += para que a frase seja acrescentada e não substituída</span>
+            <span>res.innerHTML += `você está na velocidade certa`</span>
+    </code>
+
+    <div>Sistema de Multas</div>
+    <input type="number" name="txtvel" id="txtvel">
 </body>
 </html>
