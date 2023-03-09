@@ -40,10 +40,23 @@ function somar(){
 
 
 //exercício 6- Condições
-var vel = 59 
-if (vel > 60) {
-    console.log('Você foi multado!')
-}
-else{
-    console.log('Não foi multado!')
+// var vel = 59 
+// if (vel > 60) {
+//     console.log('Você foi multado!')
+// }
+// else{
+//     console.log('Não foi multado!')
+// }
+
+//exercício 7- Sistema de Multas por Condições
+function clickmult(){
+    var mult = document.getElementById('txtmult')
+    var resmult = document.getElementById('resmult')
+    var velomult = Number(mult.value)
+
+    resmult.innerHTML = ` Sua velocidade é ${velomult}.`
+
+    if (velomult > 60){
+        resmult.innerHTML = `você está multado`
+    }
 }
