@@ -54,9 +54,19 @@ function clickmult(){
     var resmult = document.getElementById('resmult')
     var velomult = Number(mult.value)
 
-    resmult.innerHTML = ` Sua velocidade é ${velomult}.`
+    resmult.innerHTML = ` Sua velocidade é ${velomult}km/h.`
 
     if (velomult > 60){
         resmult.innerHTML = `você está multado`
     }
+}
+
+//exercício 8- Condições Aninhadas
+var idade8 = 78
+if(idade8 < 16){
+    console.log('Não vota')
+} else if (idade8 < 18 || idade8 > 65) {
+        console.log('Voto Opcional')
+} else {
+    console.log('Voto Obrigatório')
 }

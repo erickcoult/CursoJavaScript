@@ -344,8 +344,36 @@
     </code>
 
     <div>Sistema de Multas</div>
-    <input type="number" name="txtmult" id="txtmult">
+    <input type="number" name="txtmult" id="txtmult">km/h
     <input type="button" value="Verificar" onclick="clickmult()">
     <div id="resmult">Resultado</div>
+
+    <h2>Condições Aninhadas</h2>
+    <h3>Exercício 8- JavaScript</h3>
+    <p>Condição aninhnada nada mais é do que uma condição dentro da outra. Ela são representadas por <strong>Else</strong>,<strong>If</strong> e <strong>Elseif</strong></p>
+    <code>
+        <span>if(cond1){</span>
+            <span>bloco 1</span>
+        <span>} else{</span>
+            <span>if(cond2){</span>
+            <span>}else{</span>
+            <span>}</span>
+        <span>}</span>
+    </code>
+    <p>Aqui temos a seguinte lógica: Caso a condição 1 seja verdadeira, então o bloco 1 será executado. Agora, se for falsa, a condição 2 será executada</p>
+    <p>Podemos inserir quantos Else e If desejarmos</p>
+    <code>
+        <span>var idade = 78</span>
+        <span>if(idade &lt 16){</span>
+            c<span>onsole.log('Não vota')</span>
+        <span>} else if (idade &lt 18 || idade > 65) {</span>
+                <span>console.log('Voto Opcional')</span>
+        <span>} else {</span>
+            <span>console.log('Voto Obrigatório')</span>
+        <span>}</span>
+    </code>
+    <p>No exemplo, podemos analisar que há 2 condições. A primeira condição é; Se a idade foi menor que 16 anos, então será printado na tela "nao vota".</p>
+    <p>Entretanto, na segunda condição é; Senão se (else if) a idade for menor que 18 E maior que 65, então o console printará "Voto Opcional".</p>
+    <p>Agora, por fim, SENÃO (else) for nenhum dos casos, o console printará "voto obrigatório" </p>
 </body>
 </html>
