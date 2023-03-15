@@ -375,5 +375,25 @@
     <p>No exemplo, podemos analisar que há 2 condições. A primeira condição é; Se a idade foi menor que 16 anos, então será printado na tela "nao vota".</p>
     <p>Entretanto, na segunda condição é; Senão se (else if) a idade for menor que 18 E maior que 65, então o console printará "Voto Opcional".</p>
     <p>Agora, por fim, SENÃO (else) for nenhum dos casos, o console printará "voto obrigatório" </p>
+    <h2>Condição Multipla</h2>
+    <p>A condição multipla tem sua função de fornecer um valor fixo. Ou seja, ela nao tem apenas a <strong>possibilidade</strong> de sim ou não, tendo vários outros caminhos.
+    </p>
+    Ela é representada pelo comando <strong>switch(expressão){}</strong>. Podemos notar que é dada uma expressão e não uma condição como vemos em if.
+    <p>Dentro do bloco, podemos adicionar os "<strong>case</strong>" e o "<strong>default</strong>. Cada case possui o seu bloco que irá conter as expressões desejadas. Já o default funciona como um else, sendo algo opcional. Logo, caso os valores de CASE sejam insatisfeitos, ele fará o default</p>
+    <code>
+        <span>switch (expressão){</span>
+            <span>case valor1:</span>
+            <span>break</span>
+            <span>case valor2:</span>
+            <span>break</span>
+            <span>case valor3:</span>
+            <span>break</span>
+            <span>default:</span>
+            <span>break</span>
+    </code>
+    <p><strong>ATENÇÃO:</strong>após cada CASE, usamos o código <strong>break</strong>. O comando break encerra o loop atual, switch , ou o loop que foi informado e transfere o controle da execução do programa para o comando seguinte. Ou seja, suponhamos que, ao testar a expressão (do switch) e o "CASE valor2" esteja correto, o break fará com que seja encerrado o fluxo, passando para o próximo código. Assim, caso não haja um break, o programa irá executar todos os comandos de todos os CASES até achar um break, bugando tudo. </p>
+    <h2>Sistema de dias da semana por switch</h2>
+    <h3>Exercício 9 JavaScript</h3>
+    <p>Primeiro, para criarmos um sistema de Hora/Dia/Mês/Ano, vamos criar uma var e inserir o código "<strong>new Date(</strong></p>
 </body>
 </html>
