@@ -70,3 +70,30 @@ if(idade8 < 16){
 } else {
     console.log('Voto Obrigatório')
 }
+
+//exercício 9- Switch
+var agora9 = new Date()
+var diaSem9 = agora9.getDay()
+
+switch(diaSem9){
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda')
+    case 2:
+        console.log('Terça')
+        break
+    case 3:
+        console.log('Quarta')
+        break
+    case 4:
+        console.log('Quinta')
+        break
+    case 5:
+        console.log('Sexta')
+        break
+    case 6:
+        console.log('Sabado')
+        break    
+}

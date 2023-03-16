@@ -394,6 +394,16 @@
     <p><strong>ATENÇÃO:</strong>após cada CASE, usamos o código <strong>break</strong>. O comando break encerra o loop atual, switch , ou o loop que foi informado e transfere o controle da execução do programa para o comando seguinte. Ou seja, suponhamos que, ao testar a expressão (do switch) e o "CASE valor2" esteja correto, o break fará com que seja encerrado o fluxo, passando para o próximo código. Assim, caso não haja um break, o programa irá executar todos os comandos de todos os CASES até achar um break, bugando tudo. </p>
     <h2>Sistema de dias da semana por switch</h2>
     <h3>Exercício 9 JavaScript</h3>
-    <p>Primeiro, para criarmos um sistema de Hora/Dia/Mês/Ano, vamos criar uma var e inserir o código "<strong>new Date(</strong></p>
+    <p>Primeiro, para criarmos um sistema de Hora/Dia/Mês/Ano baseado no computador local, vamos criar uma VAR e inserir o código "<strong>new Date()</strong>. Em seguida, criamos outra VAR, entretanto, com o nome da VAR anterior + o código <strong>.getDay()</strong>. Em seguida, criamos um console.log para printar os resultados. E, por fim, criamos os switchs e as cases.</p>
+    <p>Vale lembrar que, para o JavaScript, os dias da semana são representados por números, sendo 0 domingo e 6 sábado. Devido a isso,devemos inserir um console.log em cada bloco para que seja printado o nome do dia da semana.</p>
+    <h1>Repetição</h1>
+    <p>A estrutura de repetição, como pelo próprio nome já diz, tem a fução de repetir o comando até que se torne falso. Ou seja, ao inserimos uma condição dentro de um bloco, ela será verificada e, se der como uma condição VERDADEIRA, o programa voltará todo o processo novamente, fazendo então, um looping, até que a condição seja FALSA.</p>
+    <p>Uma das estrutura de repetição que temos é a <strong>while (condição){}</strong>. Podemos ler o while como um 'ENQUANTO'.</p>
+    <p>Para uma melhor clareza, imagine uma pizza com 24 pedaços. Podemos criar uma function com a expressão 'comerPizza' e, dentro dela, inserimos "comer um pedaço". Teriamos que inserir 24x o 'comer um pedaço'. Porém, com o While, podemos fazer isso</p>
+    <code>
+        <span>While(enquanto) (temFatia()){</span>
+            <span>comerFatia</span>
+    </code>
+    <p>Assim, enquanto tem fatia, o 'comerFatia' será executado. Depois, o programa rodará novamente 24x até não ter mais 'temFatia'.</p>
 </body>
 </html>
