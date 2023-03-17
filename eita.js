@@ -99,8 +99,15 @@ switch(diaSem9){
 }
 
 //exercício 10- Repetição
-var c10 = 1
+var c10 = 0
 while(c10 <= 6){
     console.log(`Passo ${c10}`)
-    c10 += 3
+    c10 += 2
 }
+
+//exercício 11- Repetição inversa
+var c11 = 0
+do{
+    console.log(`Passo ${c11}`)
+    c11 +=1
+} while(c11 <= 6)
