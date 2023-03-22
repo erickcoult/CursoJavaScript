@@ -432,5 +432,29 @@
         <span>} while(c11 &lt= 6)</span>
     </code>
     <p>Podemos ler isso como "Faça<strong>(do)</strong> printar na tela <strong>(console.log)</strong> a VAR <strong>C11</strong> e acrescente <strong>+1</strong> enquanto<strong>(while)</strong> c11 for <strong>menor</strong> ou <strong>igual</strong> a <strong>6</strong>."</p>
+
+    <h1>Repetição com variável de controle</h1>
+    <h2>Exercício 12- JavaScript</h2>
+    <p>A Repetição com variável de controle tem 3 etapas, sendo elas a Inicialização, Teste Lógico e Incrementação. Assim, primeiro haverá a inicialização e o teste lógico (verdadeiro ou falso). Se o teste lógico for verdadeiro, ele irá executar o <strong>BLOCO</strong>, que poderá conter vários outros comandos. Em seguida, ele fará um looping, voltando ao início e executando tudo de novo. Entretando, durante este looping, ele fará um incremento.</p>
+    <p>Agora, quando o teste lógico é falso, ele segue para o caminho de <strong>ENCERRAMENTO</strong></p>
+    <p>Para utilizarmos essa estrutura de repetição, usamos o comando <strong>FOR</strong>, sendo sua estrutura "<strong>for (incício; teste; incr){}</strong>". Vale lembrar que, dentro do bloco, podes iserir qualquer outro comando, como while, do, if, switch e etc. Não há limitações.</p>
+    <p>Resumidamente, repetição com variável de controle nada mais é do que uma forma mais "clean",ou seja, mais comprimida da estrutura de repetição comum. </p>
+    <code>
+        Repetição comum:
+        <span></span>
+        <span>var c12= 1</span>
+        <span>while(c12 &lt;=6){ </span>
+            <span>console.log(c12)</span>
+            <span>c12++</span>
+            <span>}</span>
+            <span></span>
+        <span>------------------------------</span>
+        Repetição com variável de controle:
+        <span></span>
+        <span>for(var c12 = 1;c &lt;= 5; c12++){</span>
+            <span>console.log(c12)</span>
+            <span>}</span>
+    </code>
+    <p>Podemos ver que 3 linhas se transformaram em apenas 1 na variável de controle.</p>
 </body>
 </html>

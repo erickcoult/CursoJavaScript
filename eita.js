@@ -111,3 +111,8 @@ do{
     console.log(`Passo ${c11}`)
     c11 +=1
 } while(c11 <= 6)
+
+//exercício 12- Repetição com variável de controle
+for(var c12 = 1; c12 <=10; c12++){
+    console.log(c12)
+}
