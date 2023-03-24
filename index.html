@@ -197,6 +197,8 @@
         <span>var res = idade >= 18 ? 'MAIOR':'MENOR'</span>
         <span>res = 'MAIOR'</span>
     </code>
+
+    
     <h1>DOM</h1>
     <p>O <strong>Document Object Model</strong> tem como função de juntar os métodos acima com o nosso site. Ou seja, é um conjunto de objetos dentro do seu navegador que dará acesso aos componentes internos do seu website.</p>
     <h2>Árvore DOM</h2>
@@ -211,7 +213,7 @@
         <li>por Seletor</li>
     </ul>
     <h2>Marca</h2>
-    <p>Ela é representada pelo código <strong>getElementsByTagName()</strong>. Sua função é de selecionar mais de um objeto. Com isso, é possível fazermos alterações nas tag selecionadas, podendo mudar a cor, tamanho, fonte e etc. Dentro dos parenteses inserimos a tag que desejamos fazer alguma mudança. Já dentro dos colchetes selecionamos o "número" dela, ou seja, se o 'p' que desejamo mudar for o 6º do documento, então iremos inserir 12, pois a contagem começa a partir de 0.</p>
+    <p>Ela é representada pelo código <strong>getElementsByTagName()</strong>. Sua função é de selecionar mais de um objeto. Com isso, é possível fazermos alterações nas tag selecionadas, podendo mudar a cor, tamanho, fonte e etc. Dentro dos parenteses inserimos a tag que desejamos fazer alguma mudança. Já dentro das chaves selecionamos o "número" dela, ou seja, se o 'p' que desejamo mudar for o 6º do documento, então iremos inserir 12, pois a contagem começa a partir de 0.</p>
     <code>
         <span>var t1 = document.getElementsByTagName('p')[1]</span>
         <span class="d">Para realizar alguma mudança basta inseir a var e a mudança</span>
@@ -221,7 +223,7 @@
         <span class="d">Isso também pode ser usado junto com a concatenação</span>
         <span>document.write('Este é um exemplo' + t1.innerText)</span>
     </code>
-    <p>As demais formas possuem quase a <strong>mesma ideia</strong>, porém as que possuem plural como "elemenTS", será acompanhada de colchetes após os parenteses.</p>
+    <p>As demais formas possuem quase a <strong>mesma ideia</strong>, porém as que possuem plural como "elemenTS", será acompanhada de chaves após os parenteses.</p>
     <h2>Seletor</h2>
     <p>Este é o mais novo método do EcmaScrypt, ou seja, pode ser que alguns navegadores que não estejam atualizados com o mais recente do EcmaScryptcaso não suporte este método</p>
     <p>O Selector é representado pelas tags <strong>querySelector()</strong> e <strong>querySelectorAll()</strong></p>
@@ -230,6 +232,8 @@
         <span class="d">Inserimos o lugar onde se encontra aquela class(.) ou id(#) e o nome que foi dado</span>
         <span>x.style.background = 'blue'</span>
     </code>
+
+
     <h1>Eventos DOM</h1>
     <p>Evento é tudo aquilo que pode acontecer com qualquer elemento (div, span, code etc). Algo mais comum são os eventos de mouse, ou seja, quando passamos o mouse no elemento, irá ser feito diversos disparos, como os</p>
     <ul>
@@ -243,7 +247,7 @@
     <p>Estes são apenas <strong>alguns</strong> dos diversos eventos possíveis no JS. Para vermos todos os eventos podemos acessar o site <strong>Event Reference do Mozilla</strong>( <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">clique aqui</a>)</p>
     <h2>Funções</h2>
     <h3>Exercício 4 JavaScript</h3>
-    <p>Para dispararmos eventos, precisamos das funções. As funções são um conjunto de códigos que serão executadas quando um evento ocorrer. Ela é formada pelo código <strong>function xxx(parametro){}</strong>, onde no lugar de "xxx" inserimos um nome aleatório, igual em um ID. Já dentro dos colchetes, inserimos os <strong>códigos/eventos.</strong></p>
+    <p>Para dispararmos eventos, precisamos das funções. As funções são um conjunto de códigos que serão executadas quando um evento ocorrer. Ela é formada pelo código <strong>function xxx(parametro){}</strong>, onde no lugar de "xxx" inserimos um nome aleatório, igual em um ID. Já dentro das chaves, inserimos os <strong>códigos/eventos.</strong></p>
     <p>Há duas formas de dispararmos as functions. Para dispararmos da primeira forma, precisamos, antes, inserir <strong>on</strong> e o nome do método do lado da div/id/class. Após isso, colocamos um nome dentro das áspas </p>
     <p>Agora para que o código seja disparado, inserimos a function com o nome dado anteriormente. Assim, já podemos inserir os os comandos dentro do bloco </p>
     <p>Dentro de function, iremos criar uma var para buscar o nosso ID do exemplo anteriror. Para isso, usamos o basico de <strong>getElementsById</strong>. Como desejamos <strong>MUDAR O TEXTO</strong>, vamos utilizar a InnerText e o texto</p>
@@ -396,6 +400,8 @@
     <h3>Exercício 9 JavaScript</h3>
     <p>Primeiro, para criarmos um sistema de Hora/Dia/Mês/Ano baseado no computador local, vamos criar uma VAR e inserir o código "<strong>new Date()</strong>. Em seguida, criamos outra VAR, entretanto, com o nome da VAR anterior + o código <strong>.getDay()</strong>. Em seguida, criamos um console.log para printar os resultados. E, por fim, criamos os switchs e as cases.</p>
     <p>Vale lembrar que, para o JavaScript, os dias da semana são representados por números, sendo 0 domingo e 6 sábado. Devido a isso,devemos inserir um console.log em cada bloco para que seja printado o nome do dia da semana.</p>
+
+
     <h1>Repetição</h1>
     <p>A estrutura de repetição, como pelo próprio nome já diz, tem a fução de repetir o comando até que se torne falso. Ou seja, ao inserimos uma condição dentro de um bloco, ela será verificada e, se der como uma condição VERDADEIRA, o programa voltará todo o processo novamente, fazendo então, um looping, até que a condição seja FALSA.</p>
     <p>Uma das estrutura de repetição que temos é a <strong>while (condição){}</strong>. Podemos ler o while como um 'ENQUANTO'.</p>
@@ -451,16 +457,40 @@
         <span>------------------------------</span>
         Repetição com variável de controle:
         <span></span>
-        <span>for(var c12 = 1;c &lt;= 5; c12++){</span>
+        <span>for(var c12 = 1;c12 &lt;= 5; c12++){</span>
             <span>console.log(c12)</span>
             <span>}</span>
     </code>
     <p>Podemos ver que 3 linhas se transformaram em apenas 1 na variável de controle.</p>
+
+
     <h1>Variáveis Compostas</h1>
+    <h2>Exercício 13- JavaScript</h2>
     <p>Como vimos lá no início, as variáveis simples só conseguem <strong>armazenar um valor por ver</strong>. Já as compostas, tem o poder de <strong>armazenar vários valores</strong> em uma estrutura. Resumidamente, é como se pegasse várias variáveis e colocasse em um único bloco nomeado. Assim, este bloco conterá todas as variáveis e irá numerar de 0 a 9</p>
-    <p>Vamos imagianar um bloco(<strong>variável composta</strong>) que esteja dividido 3x. Cada espaço dividido receberá uma <strong>identificação/índice</strong> que começa de 0 e vai até q quantidade de divisão, que no caso foi 3. Assim, haverá os índices 0,1 e 2 no nosso exemplo.</p>
-    <p>A variável composta é chamada de <strong>Array Vetor</strong>. Já os vetores são compostos de <strong>elementos</strong>(as divisões). E os <strong>índices</strong> são a númeração dos elementos. Por fim, temos os o <strong>conteúdo</strong> de cada elemento.</p>
+    <p>Vamos imagianar um bloco(<strong>variável composta</strong>) que esteja dividido em 3 partes. Cada espaço dividido receberá uma <strong>identificação/índice</strong> que começa de 0 e vai até q quantidade de divisão, que no caso foi 3. Assim, haverá os índices 0,1 e 2 no nosso exemplo.</p>
+    <p>A variável composta é chamada de <strong>Array/Vetor</strong>. Já os vetores são compostos de <strong>elementos</strong>(as divisões). E os <strong>índices</strong> são a númeração dos elementos. Por fim, temos os o <strong>conteúdo</strong> de cada elemento.</p>
     <p>Resumidamente, um Array possui vários elementos que possuem o seu próprio valor e sua própria identificação.</p>
-    
+    <p>Para usarmos os arrays, basta penas colocarmos os elementros entre colchetes, tendo sua estrutura completa <strong>"let</strong> (ou var) <strong>num</strong>(ou qualquer outro nome)<strong>= [5,8,4]"</strong></p>
+    <p>Agora, vamos ver alguns comandos que podemos fazer com os arrays</p>
+    <ul>
+        <li>num<strong>[3]</strong>=6 -> criará automaticamente na posição <strong>3</strong> o elemento 6</li>
+        <li>num<strong>.push(7)</strong> -> irá criar o elemento <strong>7</strong> na última posição.</li>
+        <li>num<strong>.length</strong> -> dirá o <strong>comprimento</strong> do array.</li>
+        <li>num<strong>.sort()</strong> ->irá colocar os elementos em ordem <strong>crescente</strong></li>
+    </ul>
+    <p>Entretato, e se caso dejarmos fazer com que o console print 200 elementos na tela ? Para isso, usaremos uma <strong>estrutura de repetição</strong> do exercício anterior com <strong>variáveis compostas</strong></p>
+    <code>
+        <span>let(ou var) valores13 = [8,1,7,4,2,9]</span>
+        <span>for(let pos13=0; pos13 &lt; valores13.length; pos13++){</span>
+            <span>console.log(`posição${pos13} tem valor ${valores13[pos13]}`)</span>
+        <span>}</span>
+    </code>
+    <p>Há um jeito mais simplificado que este método anterior. Para isso, ainda usaremos o <strong>for</strong>, entretanto, incluiremos o comando <strong>IN</strong>.</p>
+    <code>
+        <span>for(let pos13 <strong>in</strong> num){</span>
+            console.log(`A posição ${pos13} tem o valor ${valores13[pos13]}`)~
+        <span>}</span>
+    </code>
+    <p>Podemos "ler" esse comando deste jeito: Para(<strong>for</strong>) cada posição(<strong>pos13</strong>) dentro/em(<strong>in</strong>) de <strong>num</strong>, console printará(<strong>console.log</strong>) num[pos]</p>
 </body>
 </html>

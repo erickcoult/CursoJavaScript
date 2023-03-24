@@ -116,3 +116,13 @@ do{
 for(var c12 = 1; c12 <=10; c12++){
     console.log(c12)
 }
+
+//exercício 13- Variáveis Compostas
+let valores13 = [8, 1, 7, 4, 2, 9]
+    for(let pos13=0; pos13 < valores13.length; pos13++){
+        console.log(`posição ${pos13} tem valor ${valores13[pos13]}`)
+}
+let valores13 = [8, 1, 7, 4, 2, 9]
+for(let pos13 in valores13){
+    console.log(`A posição de ${pos13} tem o valor ${valores13[pos13]}`)
+}
