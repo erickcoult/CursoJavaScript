@@ -473,10 +473,11 @@
     <p>Para usarmos os arrays, basta penas colocarmos os elementros entre colchetes, tendo sua estrutura completa <strong>"let</strong> (ou var) <strong>num</strong>(ou qualquer outro nome)<strong>= [5,8,4]"</strong></p>
     <p>Agora, vamos ver alguns comandos que podemos fazer com os arrays</p>
     <ul>
-        <li>num<strong>[3]</strong>=6 -> criará automaticamente na posição <strong>3</strong> o elemento 6</li>
+        <li>num<strong>[3]</strong>=6 -> criará automaticamente na posição <strong>3</strong> o elemento 6.</li>
         <li>num<strong>.push(7)</strong> -> irá criar o elemento <strong>7</strong> na última posição.</li>
         <li>num<strong>.length</strong> -> dirá o <strong>comprimento</strong> do array.</li>
-        <li>num<strong>.sort()</strong> ->irá colocar os elementos em ordem <strong>crescente</strong></li>
+        <li>num<strong>.sort()</strong> -> irá colocar os elementos em ordem <strong>crescente.</strong></li>
+        <li>num<strong>.indexOf()</strong> -> irá pesquisar e informar a posição que o número inserido dentro dos () está na array.</li>
     </ul>
     <p>Entretato, e se caso dejarmos fazer com que o console print 200 elementos na tela ? Para isso, usaremos uma <strong>estrutura de repetição</strong> do exercício anterior com <strong>variáveis compostas</strong></p>
     <code>
@@ -487,10 +488,11 @@
     </code>
     <p>Há um jeito mais simplificado que este método anterior. Para isso, ainda usaremos o <strong>for</strong>, entretanto, incluiremos o comando <strong>IN</strong>.</p>
     <code>
-        <span>for(let pos13 <strong>in</strong> num){</span>
+        <span>let valores13 = [8,1,7,4,2,9]</span>
+        <span>for(let pos13 <strong>in</strong> valores13){</span>
             console.log(`A posição ${pos13} tem o valor ${valores13[pos13]}`)~
         <span>}</span>
     </code>
-    <p>Podemos "ler" esse comando deste jeito: Para(<strong>for</strong>) cada posição(<strong>pos13</strong>) dentro/em(<strong>in</strong>) de <strong>num</strong>, console printará(<strong>console.log</strong>) num[pos]</p>
+    <p>Podemos "ler" esse comando deste jeito: Para(<strong>for</strong>) cada posição(<strong>pos13</strong>) dentro/em(<strong>in</strong>) de <strong>valores13</strong>, console printará(<strong>console.log</strong>) num[pos]</p>
 </body>
 </html>
