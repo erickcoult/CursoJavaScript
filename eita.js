@@ -126,3 +126,18 @@ let valores13 = [8, 1, 7, 4, 2, 9]
 for(let pos13 in valores13){
     console.log(`A posição de ${pos13} tem o valor ${valores13[pos13]}`)
 }
+
+function exer14(n){
+    if (n%2 == 0){
+        return 'Par'
+    } else {
+        return 'Ímpar'
+    }
+}
+
+console.log(exer14(123))
+
+function soma(s141=0 , s142= 0){
+    return s141 + s142
+}
+console.log(soma(7))

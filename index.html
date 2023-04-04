@@ -503,7 +503,27 @@
         <span>function <strong>ação</strong>(<strong>parâmetro</strong>)</span>{ <span class="d">&lt;---função</span>
             <span>return <strong>resultado</strong></span> <span class="d">&lt;--- ação</span>
         }
-        <span>ação(<strong>5)</strong></span> <span class="d">&lt;-- chamada</span>
+        <span>ação<strong>(5)</strong></span> <span class="d">&lt;-- chamada</span>
+    </code>
+    <p>Diferente de quando vimos anteriormente sobre funções, aqui temos as <strong>ação</strong> e o <strong>chamado</strong>. basicamente, ao executarmos o código, o programa irá pular a função e executará a <strong>chamada</strong>. O valor de <strong>5</strong>, que se encontra na chamada, vai para o parâmetro. ficando '<strong>funtion ação (5){}</strong>'. Só após que o programa executará a funão que se econtra dentro do <strong>bloco</strong>. Por fim, o <strong>return</strong> nos dará um resultado e, este resultado, irá retornar para a chamada. </p>
+    <p>Agora, vamos fazer um sistema no qual inserimos um número e, por meio de funções, nos dirá se o número é par ou ímpar.</p>
+    <code>
+        <span>function exer14(n){</span>
+            <span>if (n%2 == 0){</span>
+                <span>return 'Par'</span>
+            <span>} else {</span>
+                <span>return 'Ímpar'</span>
+            <span>}</span>
+        <span>}</span>
+<span>        </span>
+        <span>console.log(exer14(123))</span>
+    </code>
+    <p>Entretato e se colocarmos dois chamados mas só um parâmetro ? Neste caso, usamos "n1=0, n2=0, n3=0..." Isso fará com que, caso não haja a mesma quantidade de chamados para os parâmetros, então o programa retornará 0 para os pa.</p>
+    <code>
+        <span>function soma(s141=0 , s142= 0){</span>
+            <span>return s141 + s142</span>
+        <span>}</span>
+        <span>console.log(soma(7))</span>
     </code>
 </body>
 </html>
