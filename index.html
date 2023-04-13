@@ -525,5 +525,27 @@
         <span>}</span>
         <span>console.log(soma(7))</span>
     </code>
+
+    <h1>Objetos</h1>
+    <h2>Exercício 15- JavaScript</h2>
+    <p>Assim como os arrays, temos os <strong>objetos</strong> que exercem uma função um pouco diferente dos arrays.</p>
+    <p>Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor.</p>
+    <p>Resumidamente, os objetos possuem um característuca de nomeação/identificação ao invés de índices, como os array. Outra diferença seria que usamos chaves ao invés de colchetes.</p>
+    <p>Podemos, também, fazer algo de novo nos objetos que não podemos fazer nos arrays que é a <strong>adição de função nos elementos</strong>.</p>
+    <code>
+        <span>let amigo ={nome:' José',sexo:'M',peso:85.4,engordar(p){}}</span>
+    </code>
+    <p>Seguindo a expressão acima, iremos criar uma função dentro deste objeto para que nos fale se José engordou e o peso atual.</p>
+    <code>
+        <span>let amigo = {nome: 'José', sexo: 'M', peso:85.4, engordar(p=0){</span>
+            <span>console.log('Engordou')</span>
+            <span>this.peso += p</span>
+        <span>}}</span>
+        
+        <span>amigo.engordar(2)</span>
+        <span>console.log (`${amigo.nome} pesa ${amigo.peso}`)</span>
+    </code>
+    <p>Assim, criamos a variável com as informações e a função nela. Em seguida, faremos printar na tela a expressão "engordou". Após isso, teremos um pequeno código que adicionará a característica <strong>peso</strong> na variável P que se encontra dentro da função, logo, P = 85.4</p>
+    <p>Por fim, fazemos a <strong>chamada</strong> para acrescentar +2 à função "engordar". Ao final, printaremos na tela. </p>
 </body>
 </html>

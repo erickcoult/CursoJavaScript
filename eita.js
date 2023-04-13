@@ -141,3 +141,12 @@ function soma(s141=0 , s142= 0){
     return s141 + s142
 }
 console.log(soma(7))
+
+//exercício 15- Objetos
+let amigo = {nome: 'José', sexo: 'M', peso:85.4, engordar(p=0){
+    console.log('Engordou')
+    this.peso += p
+}} 
+
+amigo.engordar(2)
+console.log (`${amigo.nome} pesa ${amigo.peso}`)
