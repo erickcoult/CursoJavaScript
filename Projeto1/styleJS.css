@@ -4,16 +4,21 @@ body{
     , rgba(135, 207, 235, 0.623));
 }
 header{
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 section{
-    background: white;
+    background: rgba(255, 255, 255, 0.253);
+    color: white;
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+    font-size: 30px;
+}
+div{
+    text-align: center;
 }
 footer{
     color: white;
