@@ -1,4 +1,4 @@
-function carregar() {
+function carregar(){
 var msg = document.getElementById('msg')
 var img = document.getElementById('imagem')
 var data = new Date()
@@ -15,8 +15,4 @@ if(hora >=0 && hora <12){
     img.src = 'imgs/noite.png'
     document.body.style.background ='#3e2e3e'
 }
-}
-function apertar(){
- var horasm = document.getElementById('horasm')
- var buttonhor = getElementById('buttonhor')
 }
