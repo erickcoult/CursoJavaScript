@@ -16,3 +16,7 @@ if(hora >=0 && hora <12){
     document.body.style.background ='#3e2e3e'
 }
 }
+function apertar(){
+ var horasm = document.getElementById('horasm')
+ var buttonhor = getElementById('buttonhor')
+}
