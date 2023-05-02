@@ -2,13 +2,13 @@ function carregar(){
 var msg = document.getElementById('msg')
 var img = document.getElementById('imagem')
 var data = new Date()
-var hora = data.getHours()
-var minutos = data.getMinutes()
-msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos`
-if(hora >=0 && hora <12){
+var hora1 = data.getHours()
+var minutos1 = data.getMinutes()
+msg.innerHTML = `Agora são`
+if(hora1 >=0 && hora1 <12){
     img.src = 'imgs/manha.png'
     document.body.style.background = '#fba279'
-} else if (hora >= 12 && hora < 18){
+} else if (hora1 >= 12 && hora1 < 18){
     img.src = 'imgs/tarde.png'
     document.body.style.background ='#d5a76c'
 } else {
@@ -16,3 +16,19 @@ if(hora >=0 && hora <12){
     document.body.style.background ='#3e2e3e'
 }
 }
+
+const horas2 = document.getElementById('horas')
+const minutos = document.getElementById('minutos')
+const segundos = document.getElementById('segundos')
+
+const relogio = setInterval(function time() {
+    let dateToday = new Date();
+    let hr = dateToday.getHours();
+    let min = dateToday.getMinutes();
+    let s = dateToday.getSeconds();
+
+    horas2.textContent = hr;
+    minutos.textContent = min;
+    s.textContent = s;
+
+})
