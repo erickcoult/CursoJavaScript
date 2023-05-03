@@ -11,10 +11,10 @@ section{
     background: rgba(255, 255, 255, 0.253);
     color: white;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.67);
     font-size: 30px;
 }
 div{
@@ -27,12 +27,14 @@ footer{
 }
 
 .bodyr{
+    background: rgba(255, 255, 255, 0.41);
     margin-top: 15px;
     height: 20vh;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 10px;
 }
 .relogio{
     display: flex;
@@ -41,13 +43,18 @@ footer{
     height: 150px;
     width: 500px;
     box-shadow: 1px 2.4px 6px rgba(0, 0, 0, 0.5);
+    
 }
 .relogio div{
+    height: 100px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     letter-spacing: 2px;
+    background: black;
+    border-radius: 10px;
 }
 
 .relogio span{

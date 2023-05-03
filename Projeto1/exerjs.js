@@ -1,3 +1,21 @@
+const horas = document.getElementById('horas')
+const minutos = document.getElementById('minutos')
+const segundos = document.getElementById('segundos')
+const relogio = setInterval(function time() {
+    let dateToday = new Date();
+    let hr = dateToday.getHours();
+    let min = dateToday.getMinutes();
+    let s = dateToday.getSeconds();
+
+    if (hr < 10) hr = '0' +hr;
+    if (min < 10) min = '0' +min;
+    if (s < 10) s = '0' +s;
+
+    horas.textContent = hr;
+    minutos.textContent = min;
+    segundos.textContent = s;
+})
+
 function carregar(){
 var msg = document.getElementById('msg')
 var img = document.getElementById('imagem')
@@ -16,19 +34,3 @@ if(hora1 >=0 && hora1 <12){
     document.body.style.background ='#3e2e3e'
 }
 }
-
-const horas2 = document.getElementById('horas')
-const minutos = document.getElementById('minutos')
-const segundos = document.getElementById('segundos')
-
-const relogio = setInterval(function time() {
-    let dateToday = new Date();
-    let hr = dateToday.getHours();
-    let min = dateToday.getMinutes();
-    let s = dateToday.getSeconds();
-
-    horas2.textContent = hr;
-    minutos.textContent = min;
-    s.textContent = s;
-
-})
